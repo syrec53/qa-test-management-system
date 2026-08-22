@@ -1,4 +1,10 @@
-\documentclass[letterpaper,10pt]{article}
+%-------------------------
+% Resume in LaTeX
+% Author: Sandeep Yadav
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -11,129 +17,206 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Page geometry for optimal 1-page fit
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.2in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
-\setlength{\tabcolsep}{0pt}
+\setlength{\tabcolsep}{0in}
 
-% Section formatting
+% Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\hrule height 0.8pt \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% List spacing
-\setlist[itemize]{leftmargin=*,parsep=0pt,itemsep=2pt,topsep=2pt,partopsep=0pt}
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
+%-------------------------
 % Custom commands
-\newcommand{\resumeItemSimple}[1]{
-  \item\small{{#1}}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small#2 \\
+    \begin{tabular*}{1.0\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-7pt}
 }
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\linewidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\linewidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-%----------HEADING-----------------
+%----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Sandeep Yadav} \\ \vspace{3pt}
-    \small Gurugram $|$ +91 90058 46406 $|$ \href{mailto:syrec53@gmail.com}{syrec53@gmail.com} \\ \vspace{2pt}
-    \href{https://linkedin.com/in/sandeep-yadav}{\underline{LinkedIn}} $|$
-    \href{https://github.com/syrec53}{\underline{GitHub: syrec53}} $|$
-    \href{https://leetcode.com/Y2213053}{\underline{LeetCode}} $|$
-    \href{https://geeksforgeeks.org/syrec53}{\underline{GeeksforGeeks}}
+    {\Huge \scshape Sandeep Yadav} \\ \vspace{1pt}
+    Gurugram, Haryana \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 90058 46406 ~ 
+    \href{mailto:syrec53@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{syrec53@gmail.com}} ~ 
+    \href{https://linkedin.com/in/sandeep-yadav}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/sandeep-yadav}}  ~
+    \href{https://github.com/syrec53}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/syrec53}} ~
+    \href{https://leetcode.com/Y2213053}{\raisebox{-0.2\height}\ \underline{LeetCode}} ~
+    \href{https://geeksforgeeks.org/syrec53}{\raisebox{-0.2\height}\ \underline{GeeksforGeeks}}
+    \vspace{-8pt}
 \end{center}
 
-\vspace{-8pt}
-
-%-----------OBJECTIVE-----------
-\section{Objective}
-\vspace{2pt}
-\small{Results-driven \textbf{Software Engineer / SDET} with hands-on experience in full-stack web application development, test automation, system optimization, and machine learning. Seeking a Software Engineer / SDET role to build scalable systems, drive test automation, and deliver robust software solutions.}
-
-%-----------SKILLS-----------
-\section{Technical Skills}
-\vspace{2pt}
- \begin{itemize}[leftmargin=*,label={}]
-    \small{\item{
-     \textbf{Languages \& Core CS}{: JavaScript (ES6+), Java, Python, C++, SQL, HTML5, CSS3, Data Structures \& Algorithms, OOP, DBMS, OS, Networks.} \\
-     \textbf{Frameworks \& Web}{: React.js, Node.js, Express, Tailwind CSS, MERN Stack, Streamlit, REST APIs.} \\
-     \textbf{Testing \& Developer Tools}{: Git, GitHub, VS Code, Postman, Docker, Netlify, Vercel, SDLC, STLC, Manual/Automated Testing, Jira, Agile.}
-    }}
- \end{itemize}
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \begin{itemize}
-    \resumeSubheading
-      {Open Source Mentor -- GSSoC-25}{Aug 2025 -- Oct 2025}
-      {GirlScript Summer of Code}{Remote $| \ $ \href{https://github.com/syrec53}{\underline{GitHub Contributions}}}
-      \resumeItemSimple{Mentored 50+ open-source contributors worldwide across multiple repositories, driving 80+ pull requests to successful merge.}
-      \resumeItemSimple{Reviewed 120+ pull requests for code quality, architectural correctness, and strict adherence to repository testing standards.}
-      \resumeItemSimple{Diagnosed and resolved 40+ architectural and implementation bugs, cutting developer debugging cycles by 35\%.}
-      \resumeItemSimple{Conducted manual, regression, and functional testing to verify bug fixes and feature implementations prior to merging.}
-  \end{itemize}
-
-%-----------PROJECTS-----------
-\section{Projects}
-  \begin{itemize}
-    \resumeSubheading
-      {QA Test Management System}{May 2026}
-      {React.js, Node.js, Express, AI Test Generator, Docker, Netlify}{$| \ $ \href{https://github.com/syrec53/qa-test-management-system}{\underline{github.com/syrec53/qa-test-management-system}}}
-      \resumeItemSimple{Architected a full-stack QA Platform enabling teams to organize test suites, run test executions, and monitor real-time metrics.}
-      \resumeItemSimple{Integrated an AI-assisted test suite generator module to auto-generate edge-case test scenarios, reducing manual effort by $\sim$40\%.}
-      \resumeItemSimple{Implemented a centralized Defect \& Bug Tracking workflow with priority classification, status state machines, and visual reports.}
-      \resumeItemSimple{Configured containerized deployment with Docker \& Docker Compose and automated continuous deployment on Netlify.}
-
-    \resumeSubheading
-      {AI Vehicle Health Monitor System}{May 2026}
-      {Python, Machine Learning, Scikit-learn, Pandas, NumPy, Streamlit}{$| \ $ \href{https://github.com/syrec53/AI-Vehicle-Health-Monitor}{\underline{github.com/syrec53/AI-Vehicle-Health-Monitor}}}
-      \resumeItemSimple{Trained Decision Tree \& Random Forest classifiers on 10,000+ vehicle-sensor records, achieving 94.2\% predictive maintenance accuracy.}
-      \resumeItemSimple{Constructed automated data validation \& dimensionality reduction pipelines (Pandas/NumPy), accelerating training speed by 15\%.}
-      \resumeItemSimple{Benchmarked predictive models using precision, recall, and F1-score metrics, improving prediction reliability by 12\%.}
-
-    \resumeSubheading
-      {Finance Dashboard UI}{March 2026}
-      {React.js, JavaScript, Tailwind CSS, Vercel}{$| \ $ \href{https://github.com/syrec53/Finance-Dashboard-UI}{\underline{github.com/syrec53/Finance-Dashboard-UI}}}
-      \resumeItemSimple{Built a responsive financial analytics dashboard with 15+ reusable React components, cutting UI rendering latency by 25\%.}
-      \resumeItemSimple{Shipped continuous deployments to Vercel with 100\% uptime, managing source control and branching strategies via GitHub.}
-  \end{itemize}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \begin{itemize}
+  \resumeSubHeadingListStart
     \resumeSubheading
       {Rajkiya Engineering College, Azamgarh}{2022 -- 2026}
-      {Bachelor of Technology in Information Technology (CGPA: 7.0/10)}{Azamgarh, Uttar Pradesh}
-  \end{itemize}
+      {Bachelor of Technology in Information Technology}{CGPA: 7.0/10 $|$ Azamgarh, Uttar Pradesh}
+  \resumeSubHeadingListEnd
 
-%-----------CERTIFICATIONS \& RESPONSIBILITY-----------
-\section{Certifications \& Leadership}
-  \begin{itemize}[leftmargin=*,label={}]
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Open Source Mentor -- GSSoC'25}{Aug 2025 -- Oct 2025}
+      {GirlScript Summer of Code}{\href{https://github.com/syrec53}{\underline{github.com/syrec53}} $|$ Remote}
+      \resumeItemListStart
+        \resumeItem{Mentored \textbf{50+} open-source contributors worldwide, driving \textbf{80+} pull requests to successful merge across repositories.}
+        \resumeItem{Reviewed \textbf{120+} pull requests for code quality, architectural correctness, and adherence to repository testing standards.}
+        \resumeItem{Diagnosed and resolved \textbf{40+} architectural \& implementation bugs, cutting developer debugging cycles by \textbf{35\%}.}
+        \resumeItem{Conducted manual, regression, and functional testing to verify bug fixes and features prior to merge approval.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{QA Test Management System} $|$ \emph{React.js, Node.js, Express, AI Test Generator, Docker, Netlify} $|$ \href{https://github.com/syrec53/qa-test-management-system}{\underline{GitHub}}}{May 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a full-stack QA Platform enabling teams to organize test suites, run test executions, and monitor real-time analytics.}
+            \resumeItem{Integrated AI-assisted test suite generator to auto-generate edge-case scenarios, reducing manual test creation effort by \textbf{$\sim$40\%}.}
+            \resumeItem{Implemented centralized Defect \& Bug Tracking workflow with priority classification, state machines, and visual dashboards.}
+            \resumeItem{Configured containerized deployment with \textbf{Docker \& Docker Compose} and automated CI/CD on Netlify.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{AI Vehicle Health Monitor System} $|$ \emph{Python, Scikit-learn, Pandas, NumPy, Streamlit} $|$ \href{https://github.com/syrec53/AI-Vehicle-Health-Monitor}{\underline{GitHub}}}{May 2026}
+          \resumeItemListStart
+            \resumeItem{Trained Decision Tree \& Random Forest classifiers on \textbf{10,000+} vehicle-sensor records, achieving \textbf{94.2\%} predictive accuracy.}
+            \resumeItem{Constructed automated data validation \& dimensionality reduction pipelines (Pandas/NumPy), accelerating training speed by \textbf{15\%}.}
+            \resumeItem{Benchmarked models using precision, recall, and F1-score, improving prediction reliability by \textbf{12\%}.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Finance Dashboard UI} $|$ \emph{React.js, JavaScript, Tailwind CSS, Vercel} $|$ \href{https://github.com/syrec53/Finance-Dashboard-UI}{\underline{GitHub}}}{March 2026}
+          \resumeItemListStart
+            \resumeItem{Built a responsive financial analytics dashboard with \textbf{15+} reusable React components, reducing UI rendering latency by \textbf{25\%}.}
+            \resumeItem{Deployed to Vercel with \textbf{100\%} uptime, managing continuous delivery and branching strategies via GitHub.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Certifications}{: AWS APAC Solutions Architecture Virtual Experience (July 2025) $|$ Deloitte Australia Data Analytics (July 2025)} \\
-     \textbf{Position of Responsibility}{: Student Secretary -- Training \& Placement Cell, Rajkiya Engineering College (2025 -- 2026)}
+     \textbf{Languages \& DSA}{: JavaScript (ES6+), Java, Python, C++, SQL, HTML5, CSS3, Data Structures \& Algorithms} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Node.js, Express, Tailwind CSS, MERN Stack, Streamlit, REST APIs} \\
+     \textbf{Developer Tools}{: Git, GitHub, Docker, Postman, VS Code, Netlify, Vercel} \\
+     \textbf{QA \& Testing}{: SDLC, STLC, Manual Testing, Regression Testing, Functional Testing, API Testing, Bug Life Cycle, Jira, Agile, Scrum} \\
+     \textbf{Core Concepts}{: OOP, DBMS, Operating Systems, Computer Networks, Software Testing, Quality Assurance}
     }}
-  \end{itemize}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{AWS APAC Solutions Architecture Virtual Experience} $|$ \emph{Forage}}{July 2025}
+        \resumeProjectHeading{\textbf{Deloitte Australia Data Analytics Job Simulation} $|$ \emph{Forage}}{July 2025}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------INVOLVEMENT-----------
+\section{Position of Responsibility}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Student Secretary -- Training \& Placement Cell}{2025 -- 2026}{Rajkiya Engineering College, Azamgarh}{Azamgarh, Uttar Pradesh}
+    \resumeSubHeadingListEnd
+
 
 \end{document}
