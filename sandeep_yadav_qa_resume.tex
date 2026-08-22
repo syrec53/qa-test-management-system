@@ -18,12 +18,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Tight single-page page geometry
-\addtolength{\oddsidemargin}{-0.65in}
-\addtolength{\evensidemargin}{-0.65in}
-\addtolength{\textwidth}{1.3in}
-\addtolength{\topmargin}{-0.65in}
-\addtolength{\textheight}{1.3in}
+% Page geometry for optimal 1-page fit
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -31,13 +31,13 @@
 \raggedright
 \setlength{\tabcolsep}{0pt}
 
-% Section formatting with minimal vertical whitespace
+% Section formatting with clean lines
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\hrule height 0.8pt \vspace{-6pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\hrule height 0.8pt \vspace{-5pt}]
 
-% Custom list spacing for strict 1-page budget
-\setlist[itemize]{leftmargin=*,parsep=0pt,itemsep=1.5pt,topsep=1pt,partopsep=0pt}
+% List spacing
+\setlist[itemize]{leftmargin=*,parsep=0pt,itemsep=2pt,topsep=2pt,partopsep=0pt}
 
 % Custom commands
 \newcommand{\resumeItemSimple}[1]{
@@ -56,7 +56,7 @@
 
 %----------HEADING-----------------
 \begin{center}
-    \textbf{\Huge \scshape Sandeep Yadav} \\ \vspace{2pt}
+    \textbf{\Huge \scshape Sandeep Yadav} \\ \vspace{3pt}
     \small Bengaluru, Karnataka $|$ +91 90058 46406 $|$ \href{mailto:syrec53@gmail.com}{syrec53@gmail.com} \\ \vspace{2pt}
     \href{https://linkedin.com/in/sandeep-yadav}{\underline{LinkedIn}} $|$
     \href{https://github.com/syrec53}{\underline{GitHub}} $|$
@@ -64,7 +64,7 @@
     \href{https://geeksforgeeks.org/syrec53}{\underline{GeeksforGeeks}}
 \end{center}
 
-\vspace{-10pt}
+\vspace{-8pt}
 
 %-----------OBJECTIVE-----------
 \section{Objective}
@@ -76,7 +76,7 @@
 \vspace{2pt}
  \begin{itemize}[leftmargin=*,label={}]
     \small{\item{
-     \textbf{QA \& Testing Methodologies}{: Test Case Design, Functional \& Integration Testing, Automated Scenario Generation, API Testing (Postman/REST), Defect Tracking \& Lifecycle Management, Regression Testing, Boundary Value Analysis.} \\
+     \textbf{QA \& Testing Methodologies}{: Test Case Design, Functional Testing, Integration Testing, Automated Scenario Generation, API Testing (Postman/REST), Defect Tracking \& Lifecycle Management, Regression Testing, Boundary Value Analysis.} \\
      \textbf{Programming Languages}{: JavaScript (ES6+), Java, Python, C++, SQL, HTML5, CSS3, Data Structures \& Algorithms.} \\
      \textbf{Frameworks \& Tools}{: React.js, Node.js, Express, Tailwind CSS, MERN Stack, Docker, Netlify, Vercel, Git, GitHub, VS Code, Postman.} \\
      \textbf{Core CS Concepts}{: Data Structures \& Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks.}
@@ -87,18 +87,12 @@
 \section{Experience}
   \begin{itemize}
     \resumeSubheading
-      {HackerRank SWE Certified Intern}{Nov 2022 -- Present}
-      {Software Engineer Intern}{Remote, Uttar Pradesh}
-      \resumeItemSimple{Engineered and tested 12+ scalable web modules in Java, Python, and React.js, improving client-side page load speed by 20\%.}
-      \resumeItemSimple{Designed and debugged 15+ core algorithmic solutions, cutting server response latency by 15\%.}
-      \resumeItemSimple{Resolved 20+ technical issues across 5+ open-source repositories, collaborating with international contributor teams.}
-
-    \resumeSubheading
       {Open Source Mentor -- GSSoC-25}{Aug 2025 -- Oct 2025}
       {GirlScript Summer of Code}{Remote}
-      \resumeItemSimple{Mentored 50+ open-source contributors worldwide, driving 80+ pull requests to successful merge.}
-      \resumeItemSimple{Reviewed 120+ pull requests for code quality and correctness, maintaining 100\% compliance with testing guidelines.}
+      \resumeItemSimple{Mentored 50+ open-source contributors worldwide across multiple repositories, driving 80+ pull requests to successful merge.}
+      \resumeItemSimple{Reviewed 120+ pull requests for code quality, architectural correctness, and strict adherence to repository testing standards.}
       \resumeItemSimple{Diagnosed and resolved 40+ architectural and implementation bugs, cutting developer debugging cycles by 35\%.}
+      \resumeItemSimple{Conducted manual, regression, and functional testing to verify bug fixes and feature implementations prior to merging.}
   \end{itemize}
 
 %-----------PROJECTS-----------
@@ -107,21 +101,23 @@
     \resumeSubheading
       {QA Test Management System}{May 2026}
       {React.js, Node.js, Express, AI Test Generator, Docker, Netlify}{$| \ $ \href{https://github.com/syrec53/qa-test-management-system}{\underline{GitHub Repo}}}
-      \resumeItemSimple{Architected a full-stack QA Platform for managing test suites, test runs, and real-time execution analytics.}
-      \resumeItemSimple{Integrated AI test suite generator to auto-generate edge-case scenarios, reducing manual test creation effort by ~40\%.}
-      \resumeItemSimple{Implemented centralized Defect \& Bug Tracking workflow with priority classification and visual reporting metrics.}
-      \resumeItemSimple{Configured containerized deployment with Docker and automated continuous integration on Netlify.}
+      \resumeItemSimple{Architected a full-stack QA Platform enabling QA teams to organize test suites, run test executions, and monitor real-time metrics.}
+      \resumeItemSimple{Integrated an AI-assisted test suite generator module to auto-generate edge-case test scenarios, reducing manual creation effort by ~40\%.}
+      \resumeItemSimple{Implemented a centralized Defect \& Bug Tracking workflow with priority classification, status state machines, and visual reports.}
+      \resumeItemSimple{Configured containerized deployment with Docker \& Docker Compose and automated continuous deployment on Netlify.}
 
     \resumeSubheading
       {AI Vehicle Health Monitor System}{May 2026}
       {Python, Machine Learning, Scikit-learn, Pandas, NumPy, Streamlit}{}
-      \resumeItemSimple{Trained Decision Tree \& Random Forest models on 10,000+ sensor records, achieving 94.2\% predictive accuracy.}
-      \resumeItemSimple{Benchmarked models using precision, recall, and F1-score, improving prediction reliability by 12\%.}
+      \resumeItemSimple{Trained Decision Tree \& Random Forest classifiers on 10,000+ vehicle-sensor records, achieving 94.2\% predictive maintenance accuracy.}
+      \resumeItemSimple{Constructed automated data validation & dimensionality reduction pipelines (Pandas/NumPy), accelerating training speed by 15\%.}
+      \resumeItemSimple{Benchmarked predictive models using precision, recall, and F1-score metrics, improving prediction reliability by 12\%.}
 
     \resumeSubheading
       {Finance Dashboard UI}{March 2026}
       {React.js, JavaScript, Tailwind CSS, Vercel}{}
-      \resumeItemSimple{Built responsive analytics dashboard with 15+ reusable React components, cutting rendering time by 25\%.}
+      \resumeItemSimple{Built a responsive financial analytics dashboard with 15+ reusable React components, cutting UI rendering latency by 25\%.}
+      \resumeItemSimple{Shipped continuous deployments to Vercel with 100\% uptime, managing source control and branching strategies via GitHub.}
   \end{itemize}
 
 %-----------EDUCATION-----------

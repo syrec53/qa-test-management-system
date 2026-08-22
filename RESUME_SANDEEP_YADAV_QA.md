@@ -19,32 +19,30 @@ Results-driven **Software Development Engineer in Test (SDET) / QA Engineer** wi
 
 ## EXPERIENCE
 
-### **HackerRank SWE Certified Intern** | *Remote, Uttar Pradesh* | **Nov 2022 – Present**
-* Engineered and tested 12+ scalable web modules in Java, Python, and React.js, improving client-side page load speed by 20%.
-* Designed and debugged 15+ core algorithmic solutions, cutting server response latency by 15%.
-* Resolved 20+ technical issues across 5+ open-source repositories, collaborating with international contributor teams.
-
 ### **Open Source Mentor – GSSoC-25 (GirlScript Summer of Code)** | *Remote* | **Aug 2025 – Oct 2025**
-* Mentored 50+ open-source contributors worldwide, driving 80+ pull requests to successful merge.
-* Reviewed 120+ pull requests for code quality and correctness, maintaining 100% compliance with testing guidelines.
+* Mentored 50+ open-source contributors worldwide across multiple repositories, driving 80+ pull requests to successful merge.
+* Reviewed 120+ pull requests for code quality, architectural correctness, and strict adherence to repository testing standards.
 * Diagnosed and resolved 40+ architectural and implementation bugs, cutting developer debugging cycles by 35%.
+* Conducted manual, regression, and functional testing to verify bug fixes and feature implementations prior to merging.
 
 ---
 
 ## PROJECTS
 
 ### **QA Test Management System** | *React.js, Node.js, Express, AI Test Generator, Docker, Netlify* | [GitHub Repo](https://github.com/syrec53/qa-test-management-system) | **May 2026**
-* Architected a full-stack QA Platform for managing test suites, test runs, and real-time execution analytics.
-* Integrated AI test suite generator to auto-generate edge-case scenarios, reducing manual test creation effort by ~40%.
-* Implemented centralized Defect & Bug Tracking workflow with priority classification and visual reporting metrics.
-* Configured containerized deployment with Docker and automated continuous integration on Netlify.
+* Architected a full-stack QA Platform enabling QA teams to organize test suites, run test executions, and monitor real-time metrics.
+* Integrated an AI-assisted test suite generator module to auto-generate edge-case test scenarios, reducing manual creation effort by ~40%.
+* Implemented a centralized Defect & Bug Tracking workflow with priority classification, status state machines, and visual reports.
+* Configured containerized deployment with Docker & Docker Compose and automated continuous deployment on Netlify.
 
 ### **AI Vehicle Health Monitor System** | *Python, Scikit-learn, Pandas, NumPy, Streamlit* | **May 2026**
-* Trained Decision Tree & Random Forest models on 10,000+ sensor records, achieving 94.2% predictive accuracy.
-* Benchmarked models using precision, recall, and F1-score, improving prediction reliability by 12%.
+* Trained Decision Tree & Random Forest classifiers on 10,000+ vehicle-sensor records, achieving 94.2% predictive maintenance accuracy.
+* Constructed automated data validation & dimensionality reduction pipelines (Pandas/NumPy), accelerating training speed by 15%.
+* Benchmarked predictive models using precision, recall, and F1-score metrics, improving prediction reliability by 12%.
 
 ### **Finance Dashboard UI** | *React.js, JavaScript, Tailwind CSS, Vercel* | **March 2026**
-* Built responsive analytics dashboard with 15+ reusable React components, cutting rendering time by 25%.
+* Built a responsive financial analytics dashboard with 15+ reusable React components, cutting UI rendering latency by 25%.
+* Shipped continuous deployments to Vercel with 100% uptime, managing source control and branching strategies via GitHub.
 
 ---
 
