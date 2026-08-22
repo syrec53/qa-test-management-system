@@ -1,5 +1,5 @@
 # SANDEEP YADAV
-**Location:** Bengaluru, Karnataka | **Phone:** +91 90058 46406 | **Email:** syrec53@gmail.com  
+**Location:** Gurugram | **Phone:** +91 90058 46406 | **Email:** syrec53@gmail.com  
 **Links:** [LinkedIn](https://linkedin.com/in/sandeep-yadav) | [GitHub](https://github.com/syrec53) | [LeetCode](https://leetcode.com/Y2213053) | [GeeksforGeeks](https://geeksforgeeks.org/syrec53)
 
 ---
@@ -13,7 +13,7 @@ Results-driven **Software Development Engineer in Test (SDET) / QA Engineer** wi
 * **QA & Testing Methodologies:** Test Case Design, Functional & Integration Testing, Automated Scenario Generation, API Testing (Postman/REST), Defect Tracking & Lifecycle Management, Regression Testing, Boundary Value Analysis.
 * **Programming Languages:** JavaScript (ES6+), Java, Python, C++, SQL, HTML5, CSS3, Data Structures & Algorithms.
 * **Frameworks & Tools:** React.js, Node.js, Express, Tailwind CSS, MERN Stack, Docker, Netlify, Vercel, Git, GitHub, VS Code, Postman.
-* **Core CS Concepts:** Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks.
+* **Core CS Concepts:** SDLC, STLC, Manual Testing, Software Testing, Quality Assurance, DBMS, Bug Life Cycle, API Testing, SQL, Agile, Scrum, Jira.
 
 ---
 
